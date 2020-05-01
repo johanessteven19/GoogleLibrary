@@ -13,7 +13,11 @@ import time
 #Create your tests here.
 
 ## -------------------------------------- Unit Test ----------------------------------------
-class Story8Test(TestCase):
+class Story9Test(TestCase):
     def test_url_exist(self):
         response = Client().get('')
-        self.assertEqual(response.status_code,200)  
+        self.assertEqual(response.status_code,200)
+    
+    def test_story9_using_home_func(self):
+        found = resolve('/')
+        self.assertEqual(found.func, homeerg)
