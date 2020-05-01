@@ -20,4 +20,4 @@ class Story9Test(TestCase):
     
     def test_story9_using_home_func(self):
         found = resolve('/')
-        self.assertEqual(found.func, homeerg)
+        self.assertEqual(found.func, home)
